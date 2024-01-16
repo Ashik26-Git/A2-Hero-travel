@@ -597,13 +597,12 @@ ul li a {
 }
 
 .icon-company-container {
-    display: flex;
-    justify-content: center;
+   display: flex;
+   justify-content: center;
 
 }
 .icone-company-name-2 {
     display: flex;
-    margin-left: 160px;
 
 
 }
@@ -703,5 +702,8 @@ hr {
     .icone-company-name-2{
         margin-left: 0;
     } 
+    .offer-holder, .popular-pic{
+        width: 100%;
+    }
 
 }
