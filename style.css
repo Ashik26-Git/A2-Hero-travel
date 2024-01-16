@@ -597,15 +597,17 @@ ul li a {
 }
 
 .icon-company-container {
-   display: flex;
-   justify-content: center;
+    display: flex;
+    justify-content: center;
 
 }
+
 .icone-company-name-2 {
     display: flex;
 
 
 }
+
 .footer-description {
     display: flex;
     justify-content: center;
@@ -641,7 +643,7 @@ hr {
     font-weight: 300;
     margin-bottom: 100px;
 
-} 
+}
 
 /* responsive media query */
 @media screen and (max-width:600px) {
@@ -684,8 +686,12 @@ hr {
     }
 
     .popular-image,
-    .mountain-video{
+    .mountain-video {
         margin-top: 50px;
+    }
+
+    .lower-div {
+        max-width: 100%;
     }
 
     .row-1,
@@ -699,11 +705,17 @@ hr {
         display: flex;
         justify-content: end;
     }
-    .icone-company-name-2{
+
+    .icone-company-name-2 {
         margin-left: 0;
-    } 
-    .offer-holder, .popular-pic{
+    }
+
+    .offer-holder,
+    .popular-pic {
         width: 100%;
+    }
+    .footer-description{
+        text-align: center;
     }
 
 }
