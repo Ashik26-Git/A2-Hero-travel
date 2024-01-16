@@ -6,10 +6,7 @@
 .header {
     display: flex;
     justify-content: space-between;
-    max-width: 1170px;
-    margin: auto;
-
-
+    margin: 0 auto;
 }
 
 #explore {
@@ -34,19 +31,25 @@
 
 .icone-pic {
     margin-top: 2.8rem;
+
+
 }
 
 .icone-company-name {
     display: flex;
+    margin-left: 160px;
+
 
 }
 
 nav {
     margin-top: 40px;
+
 }
 
 nav ul {
     display: flex;
+    margin-right: 160px;
 }
 
 nav li {
@@ -78,11 +81,8 @@ ul li a {
 }
 
 .search-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     padding-top: 50px;
+
 }
 
 .search-title {
@@ -90,6 +90,7 @@ ul li a {
     font-size: 4rem;
     font-style: normal;
     font-weight: 800;
+    text-align: center;
 
 }
 
@@ -97,19 +98,21 @@ ul li a {
     color: #FFF;
     font-size: 1rem;
     font-weight: 400;
-    width: 675px;
+    text-align: center;
 
 }
 
 .inpt {
     width: 160px;
     height: 50px;
-    border-radius: 8px 0px 0px 8px;
+    border-radius: 8px;
+    /*0px 0px 8px */
     background: #FFF;
     border: 0;
     outline: 0;
     margin-left: 15px;
     margin-top: 15px;
+
 }
 
 .btn {
@@ -139,9 +142,11 @@ ul li a {
     display: flex;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
-    width: 800px;
     height: 85px;
     margin-top: 20px;
+    justify-content: center;
+    margin-left: 185px;
+    margin-right: 185px;
 
 }
 
@@ -538,7 +543,7 @@ ul li a {
 }
 
 .newsletter-content {
-    padding: 40px;
+    margin: 40px;
 }
 
 .subscribe {
@@ -596,7 +601,12 @@ ul li a {
     justify-content: center;
 
 }
+.icone-company-name-2 {
+    display: flex;
+    margin-left: 160px;
 
+
+}
 .footer-description {
     display: flex;
     justify-content: center;
@@ -631,5 +641,67 @@ hr {
     font-size: 16px;
     font-weight: 300;
     margin-bottom: 100px;
+
+} 
+
+/* responsive media query */
+@media screen and (max-width:600px) {
+    nav {
+        display: none;
+    }
+
+    .header {
+        margin: 0 auto;
+    }
+
+    .search-title,
+    .popular-tour-title,
+    .destination-title,
+    .choose-title,
+    .deals-title,
+    .perfect-place-title {
+        font-size: 22px;
+    }
+
+    .search-description,
+    .popular-tour-description,
+    .destination-description,
+    .choose-description,
+    .destination-description,
+    .perfect-place-description,
+    .perfect-place-list {
+        font-size: 14px;
+    }
+
+    .check-box,
+    .popular-tour-container,
+    .row-1,
+    .row-2,
+    .row-3,
+    .upper-div,
+    .mountain-simple,
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .popular-image,
+    .mountain-video{
+        margin-top: 50px;
+    }
+
+    .row-1,
+    .row-2,
+    .row-3 {
+        overflow: scroll;
+    }
+
+    .discount-middle,
+    .discount {
+        display: flex;
+        justify-content: end;
+    }
+    .icone-company-name-2{
+        margin-left: 0;
+    } 
 
 }
